@@ -23,7 +23,7 @@ Este proyecto en Java implementa un sistema de parqueadero utilizando matrices y
 1. Clona el repositorio:
 
 ```bash
-git clone https://github.com/tu-usuario/tu-repositorio.git
+git clone https://github.com/tu-usuario/tu-repositorio.git](https://github.com/Arabio29/parqueaderoMatrizJavaPOO.git
 Compila y ejecuta el programa:
 bash
 Copy code
