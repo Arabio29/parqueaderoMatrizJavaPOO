@@ -11,7 +11,7 @@ Este proyecto en Java implementa un sistema de parqueadero utilizando matrices y
 
 ## Diagrama UML
 
-![Diagrama UML](path/to/your/uml/diagram.png)
+![Diagrama UML](https://wireed.online/wp-content/uploads/2024/01/Imagen-de-WhatsApp-2024-01-17-a-las-17.49.49_d4acc709.jpg)
 
 ## Requisitos
 
