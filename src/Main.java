@@ -1,25 +1,23 @@
 public class Main {
     public static void main(String[] args) {
+        double tarifaCarros = 2000;
+        Estacionamiento miEstacionamiento = new Estacionamiento(tarifaCarros, 5, 4);
 
-        Carro carro1 = new Carro("YJX876", "Mazda", "GT-123", 6);
-        Carro carro2 = new Carro("COL102", "Chevrolet", "Spark", 2);
-        Carro carro3 = new Carro("DAN021", "Ferrari", "Z-80", 24);
+        Carro carro1 = new Carro("ABC123", "Toyota", "Corolla");
+        Carro carro2 = new Carro("XYZ789", "Honda", "Civic");
+        Carro carro3 = new Carro("DAN899", "Ferrari", "GT - 90");
 
-        //Parquear carros
-        carro1.
-        carro2.
-        carro3.
-        //Mostrar estado de parqueader
+        miEstacionamiento.parquear(carro1, 2, 1);
+        miEstacionamiento.parquear(carro2, 3, 2);
+        miEstacionamiento.parquear(carro3, 0, 3);
 
+        System.out.println("Estado actual del estacionamiento:");
+        miEstacionamiento.mostrarEstacionamiento();
 
-
-        //Mostrar la informacion completa de los autos
+        System.out.println("\nInformación de los carros estacionados:");
         carro1.mostrarInfoCarro();
         carro2.mostrarInfoCarro();
         carro3.mostrarInfoCarro();
-
-
-
 
     }
 }

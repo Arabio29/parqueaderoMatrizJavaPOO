@@ -1,41 +1,39 @@
 public class Estacionamiento {
 
-    int tarifaHora = 2000;
+    private Carro[][] carros = new Carro[5][4];
+    private Carro carro;
+    private double tarifaCarros;
 
-    public static void main(String[] args) {
-        //Declaro variables que almacenan el tamaño de mi matriz
-        int filas = 5;
-        int columnas = 4;
-
-
-        //Creé matriz de objetos tipo Carro que es la clase que quiero almacenar
-        Carro[][] matrizEstacionamiento = new Carro[filas][columnas];
-
-        // Inicialicé la matriz
-        for (int i = 0; i < filas; i++) {
-            for (int j = 0; j < columnas; j++) {
-
-                matrizEstacionamiento[i][j] = null; // Representa un espacio vacío
+    public Estacionamiento(double tarifaCarros, int filas, int columnas) {
+        this.tarifaCarros = tarifaCarros;
+        this.carros = carros;
+    }
+    public boolean parquear(Carro carro, int fila, int columna){
+        if(carros[fila][columna] == null){
+            carros[fila][columna] = carro;
+            System.out.println("El vehiculo de placas " + carro.getMarca() + " se ha estacionado correctamente en la fila: " + fila + " columna: " + columna + ".");
+            return true;
+        }else{
+            System.out.println("El vehiculo no se pudo estacionar en la pocición indicada o la pocicion no existe.");
+            return false;
+        }
+    }
+    public void mostrarEstacionamiento() {
+        System.out.println("Ocupación actual del parqueadero.");
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 4; j++) {
+                if (carros[i][j] == null) {
+                    System.out.print("["+"]");
+                } else {
+                    System.out.print("[X]");
+                }
             }
+            System.out.println(" ");
         }
     }
 
-    // Método para estacionar un carro en una posición específica
-    public static void parquearCarro(Carro[][] estacionamiento, Carro carro, int fila, int columna) {
-        if (fila >= 0 && fila < estacionamiento.length && columna >= 0 && columna < estacionamiento[0].length) {
-            if (estacionamiento[fila][columna] == null) {
-                estacionamiento[fila][columna] = carro;
-                System.out.println("Carro estacionado con éxito en la fila " + fila + ", columna " + columna);
-            } else {
-                System.out.println("¡Espacio ocupado! No se puede estacionar el carro en la fila " + fila + ", columna " + columna);
-            }
-        } else {
-            System.out.println("Posición inválida para estacionar el carro");
-        }
+    public double calcularTarifaPagar(int horas, Carro carro) {
+        System.out.println("El tiempo a pagar por " + horas + " horas es: ");
+        return horas * tarifaCarros;
     }
-
-
-
-
-
 }

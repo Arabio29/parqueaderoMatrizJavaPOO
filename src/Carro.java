@@ -4,21 +4,18 @@ public class Carro {
         private String placa;
         private String marca;
         private String modelo;
-        private int numHorasParqueado;
 
         //Contructor de la clase carro
-        public Carro(String placa, String marca, String modelo, int numHorasParqueado){
+        public Carro(String placa, String marca, String modelo){
                 this.placa = placa;
                 this.marca = marca;
                 this.modelo = modelo;
-                this.numHorasParqueado = numHorasParqueado;
         }
 
         //Getters
         public String getPlaca(){
                 return placa;
         }
-
         public String getMarca() {
                 return marca;
         }
@@ -27,12 +24,10 @@ public class Carro {
                 return modelo;
         }
 
-        public int getNumHorasParqueado() {
-                return numHorasParqueado;
-        }
 
         //Metodo para mostrar informacion
         public void mostrarInfoCarro() {
-                System.out.println("El Carro " + getMarca()+ " con modelo "+ getModelo()+ " y placa "+ getPlaca() + " estuvo parqueado " + getNumHorasParqueado() + " horas.");
+                System.out.println("El Carro " + getMarca()+ " con modelo "+ getModelo()+ " y placa "+ getPlaca() + " estuvo parqueado " + " horas.");
+
         }
 }
