@@ -1,0 +1,20 @@
+
+7
+java:S1220""Move this file to a named package.8åÒªşÑ1
+†
+java:S4165	"dRemove this useless assignment; "carros" already holds the assigned value along all execution paths.(Ûíæ‡ûÿÿÿÿ8íÒªşÑ1
+\
+java:S1172":Remove these unused method parameters "filas", "columnas".(’¤¹€ûÿÿÿÿ8ïÒªşÑ1
+G	java:S106"+Replace this use of System.out by a logger.(í¡¿Ï8ğÒªşÑ1
+L	java:S106"+Replace this use of System.out by a logger.(î£æ‡úÿÿÿÿ8òÒªşÑ1
+L	java:S106"+Replace this use of System.out by a logger.(ĞÒåİøÿÿÿÿ8òÒªşÑ1
+L	java:S106"+Replace this use of System.out by a logger.(ºÑ£¶şÿÿÿÿ8òÒªşÑ1
+G	java:S106"+Replace this use of System.out by a logger.(¾ğ¨8óÒªşÑ1
+L	java:S106"+Replace this use of System.out by a logger.(ŞÒ—üÿÿÿÿ8óÒªşÑ1
+N
+java:S1172#",Remove this unused method parameter "carro".(²Ö«‡ùÿÿÿÿ8óÒªşÑ1
+L	java:S106$"+Replace this use of System.out by a logger.(¯ôÚ•ùÿÿÿÿ8óÒªşÑ1
+Q
+java:S1656	"/Remove or correct this useless self-assignment.(Ûíæ‡ûÿÿÿÿ8óÒªşÑ1
+F
+java:S1068")Remove this unused "carro" private field.(…§·8ôÒªşÑ1
